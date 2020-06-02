@@ -20,70 +20,63 @@
         <section class="form-wrapper padding-lg">
             <div class="container">
                 <?=$this->session->flashdata('msg') ?>
-                <form name="contact-form" id="ContactForm" method="post" action="<?= site_url('home/contact')?>">
-                    <div class="row input-row">
-                        <div class="col-sm-6">
-                            <input name="first_name" type="text" placeholder="Full Name" required >
-                        </div>
-                        <div class="col-sm-6">
-                            <input name="email" type="email" placeholder="Email Address" name="email" required>
-                        </div>
-                    </div>
-                    <div class="row input-row">
-                        <div class="col-sm-12">
-                          <textarea name="message" id=""  rows="3" placeholder="Your Message" style="width: 100%;" required></textarea>
-                        </div>
-                        
-                    </div>
-                    <div class="row input-row">
-                        <div class="col-sm-12">
-                            <div class="g-recaptcha" data-sitekey="6Lc4er0UAAAAAJ0YRiPeJQHWGQcp2lZc-rDAyJ8x"></div>
-                        </div>
-                        
-                    </div>
-                 
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button type="submit" name="submit" value="Submit" class="btn mt-15">Apply Now <span class="icon-more-icon"></span></button>
-                            <div class="msg"></div>
-                        </div>
-                    </div>
-                </form>
+                 <div class="row">
+                    <form name="contact-form" id="ContactForm" method="post" action="<?= site_url('home/contact')?>">
+                          <h4 class="text-danger">Send Message</h4><br/>
+                          <div class="col-md-6">
+                               <div class="form-group">
+                                   <input type="text"required  name="name" class="form-control" placeholder="Name *.." >
+                               </div>
+                          </div>
+                          <div class="col-md-6">
+                               <div class="form-group">
+                                   <input type="email" required name="email" class="form-control" placeholder="Email *.." >
+                               </div>
+                          </div>
+                          <div class="col-md-12">
+                               <div class="form-group">
+                                   <textarea class="form-control" name="message" placeholder="Message..." rows="8" style="resize:none;"></textarea>
+                               </div>
+                          </div>
+                          <div class="col-md-offset-6 col-md-2">
+                               <div class="form-group">
+                                  <button type="submit" class="btn btn-md btn-block">Submit</button>
+                               </div>
+                          </div>
+                    </form>
+                 </div>
             </div>
         </section>
         <!-- end Contact Us --> 
-
-        <!-- Start Google Map -->
-        <section class="google-map">
-            <div id="map"><iframe src="" style="border:none;"></iframe></div>
-            
-        </section>
-        <!-- End Google Map --> 
 
         <!-- Start Have Questions -->
         <section class="our-impotance adrs-info have-question padding-lg">
             <div class="container">
                 <h2>Still have questions?</h2>
                 <ul class="row">
-                    <li class="col-sm-4 equal-hight">
+                    <li class="col-sm-3 equal-hight">
                         <div class="inner"> <i class="fa fa-map-marker" aria-hidden="true"></i>
-
-                            <h3>Find us here</h3>
-                            <p>Dostpur ,Khairwi ,Bathanaha Block ,Sitamarhi- Bihar</p>
+                            <h3>Central Office</h3>
+                            <p>B-141/14, Amrit Puri B,Garhi,East of Kailash, Delhi-110065</p>
                         </div>
                     </li>
-                    <li class="col-sm-4 equal-hight">
-                        <div class="inner"> <i class="fa fa-envelope" aria-hidden="true"></i>
-
-                            <h3>Email us at</h3>
-                            <p>stndss221@gmail.com </p>
+                    <li class="col-sm-3 equal-hight">
+                        <div class="inner"> <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <h3>Home</h3>
+                            <p>Padra Bauliya , Post-Nakahara Dist- Mirzapur, Uttar Pradesh</p>
                         </div>
                     </li>
-                    <li class="col-sm-4 equal-hight">
+                    <li class="col-sm-3 equal-hight">
+                        <div class="inner"> <i class="fa fa-map-marker" aria-hidden="true"></i>
+                             <h3>Zonal office:</h3>
+                            <p>Patharahiya Road, Inside of Vidhayak (Chhanbey) Awas, Near Vikash Bhawan Danghar Mirzapur 231001, Uttar Pradesh</p>
+                        </div>
+                    </li>
+                    <li class="col-sm-3 equal-hight">
                         <div class="inner"> <i class="fa fa-mobile" aria-hidden="true"></i>
 
                             <h3>Call Us on</h3>
-                            <p>+91-7739820749 / 9507214068</p>
+                            <p>+919795062905 / +919473636399</p>
                         </div>
                     </li>
                 </ul>

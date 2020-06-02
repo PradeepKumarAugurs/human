@@ -17,7 +17,7 @@
                 </div> -->
                 <div class="col-sm-6">
                     <div class="subscribe">
-                        <p><a href="<?= site_url('home/login')?>" style="color:#fff"><i class="fa fa-copyright"></i> </a> Copyright 2015 <strong>STNDSS.</strong> all rights reserved</p>
+                        <p><a href="<?= site_url('home/login')?>" style="color:#fff"><i class="fa fa-copyright"></i> </a> Copyright <?php echo date('Y');?> <strong>Human Right.</strong> all rights reserved</p>
                        
                     </div>
                 </div>

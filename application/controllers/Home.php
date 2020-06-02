@@ -18,7 +18,28 @@ class Home extends CI_Controller {
 		$this->load->view('general/index');
 		$this->load->view('general/footer');
 	}
-    
+
+    public  function  about()
+    {
+
+        $this->load->view('general/header');
+        $this->load->view('general/about'); 
+        $this->load->view('general/footer');
+    }
+
+    public  function enquiry()
+    {
+        $this->load->view('general/header');
+        $this->load->view('general/enquiry'); 
+        $this->load->view('general/footer');
+    }
+    public  function our_team()
+    {
+        $this->load->view('general/header');
+        $this->load->view('general/our_team'); 
+        $this->load->view('general/footer');
+    }
+
 	public function gallery() {
 		$data = array(); 
 		$data['gallery'] = $this->LoginModal->get_all_images(); 
@@ -241,53 +262,11 @@ class Home extends CI_Controller {
 
 	public function contact() {
 	    if($this->input->post('submit') == 'Submit') {
-	        if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
-	            $secret = '6Lc4er0UAAAAAByaafIKDurCF3QSKMq3qJ0TrEbR';
-		        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-                $responseData = json_decode($verifyResponse);
-                if($responseData->success){
-                    $first_name = $this->input->post('first_name');
-                    $email = $this->input->post('email');
-                    $message = $this->input->post('message');
-                    $this->form_validation->set_rules('first_name','First Name','required|trim');
-                    $this->form_validation->set_rules('email','Email','required|trim|valid_email');
-                    $this->form_validation->set_rules('message','Message','required|trim');
-                    if($this->form_validation->run() == FALSE){
-                        $this->session->set_flashdata('msg','<div class="alert alert-danger error_list"><a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a><strong>Wrong! </strong>'.strip_tags(validation_errors()).'</div>');
-                        redirect('home/contact');
-                    } else {
-                        $msg = "<b>Name</b> : ".$first_name."<br/><br/>";
-        				$msg .= "<b>Message</b> : ".$message."<br/><br/>";
-        				$subject = "Query On Your Website";
-        				$headers = "MIME-Version: 1.0" . "\r\n";
-        				$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        				$headers .= 'From: STNDSS<marine@moogli.in>' . "\r\n";
-        				$this->SendmailModel->send_mail2($email, "STNDSS", "stndss221@gmail.com", $subject, $msg);
-        	            $this->SendmailModel->send_mail2("marine@moogli.in", 'STNDSS', $email, $subject, "Thankyou for Apply. We will contact you soon.");
-        				$this->session->set_flashdata('msg', '<div class="alert alert-success fade in alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a><strong>Success! </strong> Thanks so much for your message. We check e-mail frequently and will try our best to respond to your inquiry.</div>');
-        				echo "<script>window.location.href='" . site_url('home/career') . "';</script>";
-                    }
-                } else {
-                    $this->session->set_flashdata('msg','<div class="alert alert-danger error_list"><a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a><strong>Error! </strong>Please click on the reCAPTCHA box.</div>');
-                    echo "<script>window.location.href='".site_url('home/contact')."';</script>";
-                }
-	        } else {
-	            $this->session->set_flashdata('msg','<div class="alert alert-danger error_list"><a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a><strong>Error! </strong>Please click on the reCAPTCHA box.</div>');
-                echo "<script>window.location.href='".site_url('home/contact')."';</script>";
-	        }
+	        
+	          
 	    } else {
-	        $cources = $this->LoginModal->get_cources();
-    		$new_cources = [];
-    		foreach($cources as $row) {
-    			$cources_year = NULL;
-    			$cources_year = $this->LoginModal->get_cources_year($row['id']);
-    			if(count($cources_year) > 0) {
-    				$row['year'] = $cources_year;
-    			}
-    			$new_cources[] = $row;
-    		}
-    		$data['cources'] = $new_cources;
-    		$this->load->view('general/header', $data);
+	        
+    		$this->load->view('general/header');
     		$this->load->view('general/contact');
     		$this->load->view('general/footer');
 	    }

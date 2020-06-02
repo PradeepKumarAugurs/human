@@ -25,7 +25,7 @@ ob_start();
 |
 */
 //$config['base_url'] = 'http://www.santtndascollege.com/';
-$config['base_url'] = 'http://34.68.35.26/hrpws/';
+$config['base_url'] = 'http://localhost/human_right';
 
 /*
 |--------------------------------------------------------------------------

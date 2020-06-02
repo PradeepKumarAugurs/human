@@ -470,16 +470,16 @@ select:focus {
 }
 
 .navbar-inverse {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 .nav>li>a {
     /*padding: 19px 15px;*/
-        padding: 19px 8px;
+        padding: 19px 33px;
 }
 
 .navbar-nav>li {
-    border-right: 1px #5fc078 solid;
+    border-right: 1px #FFEB3B solid;
 }
 
 .navbar-nav>li>a {
@@ -746,7 +746,7 @@ select:focus {
 }
 
 .btn.blue:hover {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 .banner-outer .bx-wrapper .bx-pager {
@@ -987,7 +987,7 @@ select:focus {
 }
 
 .about a.know-more:hover span {
-    color: #17a43b;
+    color: #ce000c;
 }
 
 
@@ -995,8 +995,10 @@ select:focus {
 
 .padding-lg {
     display: block;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    /*padding-top: 90px;
+    padding-bottom: 90px;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .our-cources h2,
@@ -1327,7 +1329,7 @@ select:focus {
 
 .how-study ul li:nth-child(2) .cnt-block h3:before,
 .how-study ul li:nth-child(2) a.more:hover {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 .how-study ul li:nth-child(3) .cnt-block h3:before,
@@ -1382,7 +1384,7 @@ select:focus {
     top: 0px;
     z-index: 1;
     content: "";
-    background: #17a43b;
+    background: #ce000c;
     opacity: 0.9;
 }
 
@@ -1655,7 +1657,7 @@ ul.our-strength li .title {
 }
 
 .news-events a.know-more:hover span {
-    color: #17a43b;
+    color: #ce000c;
 }
 
 
@@ -1748,7 +1750,7 @@ ul.our-strength li .title {
 }
 
 .campus-tour ul.gallery li a.more {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 .campus-tour ul.gallery li a:hover {
@@ -2201,7 +2203,7 @@ a.scroll-top {
     display: none;
     right: 20px;
     bottom: 20px;
-    background-color: #17a43b;
+    background-color: #ce000c;
 }
 
 a.scroll-top:hover {
@@ -2250,7 +2252,7 @@ ul.our-strength.opt2 li span {
 }
 
 ul.our-strength.opt2 li .icon span {
-    color: #17a43b
+    color: #ce000c
 }
 
 ul.our-strength.opt2 li .title {
@@ -2301,7 +2303,7 @@ ul.our-strength.opt2 li .title {
 }
 
 .about-video p a:hover {
-    color: #17a43b;
+    color: #ce000c;
 }
 
 .browse-teacher.grey-bg {
@@ -2528,7 +2530,7 @@ a.download-cert .sm-txt {
 
 a.download-pros:hover,
 a.download-cert:hover {
-    background-color: #17a43b;
+    background-color: #ce000c;
 }
 
 .select-course {
@@ -2856,7 +2858,7 @@ ul.teachers-follow li:nth-child(3) a {
 }
 
 .enquire-now .enquire-btn:hover {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 .cert-head {
@@ -2953,7 +2955,7 @@ ul.cert-list li span {
 
 .course-detail .duration.fee .detail {
     font-size: 36px;
-    color: #17a43b;
+    color: #ce000c;
 }
 
 .course-detail .duration.fee .detail span {
@@ -3045,15 +3047,15 @@ ul.cert-list li span {
 .course-tab>li.active>a:hover,
 .course-tab>li>a:hover {
     background: none;
-    border-bottom: 2px #17a43b solid !important;
-    color: #17a43b;
+    border-bottom: 2px #ce000c solid !important;
+    color: #ce000c;
 }
 
 .course-tab>li.active>a span,
 .course-tab>li.active>a:focus span,
 .course-tab>li.active>a:hover span,
 .course-tab>li>a:hover span {
-    color: #17a43b;
+    color: #ce000c;
 }
 
 .details-tab #curriculam,
@@ -3610,7 +3612,7 @@ ul.cert-list li span {
     max-width: 360px;
     margin: 96px 0;
     float: right;
-    background: #17a43b;
+    background: #ce000c;
     color: #fff;
     box-shadow: 0 0 30px #bfcdbf;
     position: relative;
@@ -3757,7 +3759,7 @@ ul.cert-list li span {
     margin: 30px 0 0 0;
     font-size: 13px;
     color: #fff;
-    background: #17a43b;
+    background: #ce000c;
     border-radius: 4px;
 }
 
@@ -3847,7 +3849,7 @@ ul.blog-listing>li .read-more span {
 }
 
 ul.blog-listing>li .read-more:hover span {
-    color: #17a43b;
+    color: #ce000c;
 }
 
 ul.post-detail {
@@ -3930,7 +3932,7 @@ ul.post-detail li .label {
 }
 
 .search-block .search:hover {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 .blog-right h3 {
@@ -4119,7 +4121,7 @@ ul.tags-list li a {
 }
 
 ul.tags-list li a:hover {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 
@@ -4193,7 +4195,7 @@ ul.blog-listing.detail>li {
 }
 
 .blog-left ul.follow-us li a:hover {
-    background: #17a43b;
+    background: #ce000c;
     border-color: #1c7bc3;
 }
 
@@ -4548,7 +4550,7 @@ ul.faq-listing li h2 {
 }
 
 .login-wrapper .btn:hover {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 .login-wrapper .register {
@@ -4584,7 +4586,7 @@ ul.faq-listing li h2 {
 }
 
 .login-wrapper a.forgot:hover {
-    color: #17a43b;
+    color: #ce000c;
 }
 
 .login-wrapper a.forgot span {
@@ -4601,7 +4603,7 @@ ul.faq-listing li h2 {
 }
 
 .login-wrapper a.forgot:hover span {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 .login-wrapper .login-footer {
@@ -4671,7 +4673,7 @@ ul.faq-listing li h2 {
     top: 3px;
     left: 3px;
     line-height: 0.8;
-    color: #17a43b;
+    color: #ce000c;
     transition: all .2s;
 }
 
@@ -4850,7 +4852,7 @@ ul.gallery-filter li:after {
     bottom: -2px;
     right: 0px;
     content: "";
-    background: #17a43b;
+    background: #ce000c;
     color: #4f4a4a;
     transition: all 0.5s ease 0s;
 }
@@ -4935,7 +4937,7 @@ ul.news-listing>li .read-more span {
 }
 
 ul.news-listing>li .read-more:hover span {
-    color: #17a43b;
+    color: #ce000c;
 }
 
 .news-wrapper ul.post-detail {
@@ -5095,7 +5097,7 @@ ol.ord-listing li:before {
     content: counter(li);
     counter-increment: li;
     color: #fff;
-    background: #17a43b;
+    background: #ce000c;
     border-radius: 50%;
     font-size: 12px;
     font-weight: 700;
@@ -5414,7 +5416,7 @@ a.btn-circle {
 }
 
 a.btn-circle.more {
-    background: #17a43b;
+    background: #ce000c;
 }
 
 a.btn-circle.plus {
@@ -7596,7 +7598,7 @@ ul.dropdown-menu li{
 /*==========Sub Menu=v==========*/
 
 .mainmenu .collapse ul>li:hover>a {
-    background: #30c155;
+    background: #000269;
     color: #fff
 }
 
@@ -7683,8 +7685,8 @@ ul.dropdown-menu li{
 }
 
 .mainmenu {
-    border-color: #17a43b;
-    background: #17a43b;
+    border-color: #ce000c;
+    background: #ce000c;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
@@ -7705,7 +7707,7 @@ ul.dropdown-menu li{
         background: #fff;
     }
     .navbar-nav>li {
-        border-bottom: 1px #5fc078 solid;
+        border-bottom: 1px #FFEB3B solid;
     }
 }
 
@@ -7808,7 +7810,7 @@ textarea {
 /****************/
 
 .holder {
-    background-color: #17a43b;
+    background-color: #ce000c;
     width: 300px;
     overflow: hidden;
     padding: 20px;
@@ -8025,4 +8027,28 @@ img.hovercalss{
 img.hovercalss:hover{
     border:2px solid green;
     border-radius: 8px;
+}
+
+/* test css */
+.logo_title{
+    font-size: 13px !important;
+}
+.ourteam{
+    padding: 30px;
+    /*border: 1px double lightgray;*/
+}
+.section{
+    padding: 20px;
+   border: 1px double lightgray;   
+}
+.section:hover{
+    padding: 20px;
+   border: 1px double red;   
+}
+.section img{
+   transition: transform .2s;
+}
+
+.section img:hover{
+   transform: scale(1.1);
 }
